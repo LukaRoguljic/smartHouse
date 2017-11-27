@@ -1,19 +1,26 @@
 <?php
+include('connection.php');
 
 session_start();
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $myusername = $_POST['username'];
-      $mypassword = $_POST['password']; 
+      $myusername = mysqli_real_escape_string($dbc,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($dbc,$_POST['password']); 
       
+      $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($dbc,$sql);
+	  
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $count = mysqli_num_rows($result);
+	  
 	  // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($myusername == 'user1' && $mypassword == 'user1') {
+      if($count == 1) {
          
          $_SESSION['login_user'] = $myusername;
-         header("location: index.html");
+         header("location: lesson.html");
       }else {
          header("location: index.html");
       }
