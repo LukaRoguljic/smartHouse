@@ -1,5 +1,7 @@
 <?php
    session_start();
-unset($_SESSION["login_user"]);  // where $_SESSION["nome"] is your own variable. if you do not have one use only this as follow **session_unset();**
-header("Location: index.php");
+   
+   if(session_destroy()) {
+      header("Location: index.html");
+   }
 ?>

@@ -69,7 +69,7 @@
         </div>
         <div class="sidebar-block">
           <h4 class="category">Sekcija za odjavu</h4>
-            <form avtion="logout.php">
+            <form action="logout.php">
               <a class="btn btn-block btn-default">Odjavi se</a>
             </form>
         </div>
