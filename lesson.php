@@ -69,7 +69,9 @@
         </div>
         <div class="sidebar-block">
           <h4 class="category">Sekcija za odjavu</h4>
-          <a class="btn btn-block btn-default" action="logout.php">Odjavi se</a>
+            <form avtion="logout.php">
+              <a class="btn btn-block btn-default">Odjavi se</a>
+            </form>
         </div>
       </div>
     </div>
@@ -96,7 +98,6 @@
                     <h1 class="h3 media-heading">Github Open-Source</h1>
                     <p>Ovaj cijeli projekt je napravljen u duhu "open-source" koncepta. Na "buttonu" GitHub možete pogledati kod za ovaj sustav te ga modificirati za svoje potrebe. Cilj Otvorenog koda je da što više ljudi sudjeluju u razvoju neke aplikacije kao i naobrazbe. Mnogo više možete naučiti gledajući druge kodove.</p>
                     <a href="https://github.com/LukaRoguljic/smartHouse" target="_blank"><span class="label bg-lightred">GitHub</span></a>
-                    <span class="label bg-lightred">Beginner</span>
                   </div>
                 </div>
               </div>
@@ -159,7 +160,6 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <strong>ThemeKit</strong> v4.0.0 &copy; Copyright 2015
     </footer>
     <!-- // Footer -->
 
