@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>ThemeKit</title>
+  <title>SmartHouse</title>
   <link href="css/vendor/all.css" rel="stylesheet">
   <link href="css/app/app.css" rel="stylesheet">
 </head>
@@ -33,39 +33,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="nav navbar-nav">
-            <li><a href="tutors.html">Tutors</a></li>
-            <li><a href="survey.html">Survey</a></li>
-            <li class="active"><a href="library-grid.html">Library</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">UI <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="essential-buttons.html"><i class="fa fa-th"></i> Buttons</a></li>
-                <li><a href="essential-icons.html"><i class="fa fa-paint-brush"></i> Icons</a></li>
-                <li><a href="essential-progress.html"><i class="fa fa-tasks"></i> Progress</a></li>
-                <li><a href="essential-grid.html"><i class="fa fa-columns"></i> Grid</a></li>
-                <li><a href="essential-forms.html"><i class="fa fa-sliders"></i> Forms</a></li>
-                <li><a href="essential-tables.html"><i class="fa fa-table"></i> Tables</a></li>
-                <li><a href="essential-tabs.html"><i class="fa fa-circle-o"></i> Tabs</a></li>
-              </ul>
-            </li>
-            <li><a href="../../../index.html">Themes</a></li>
-            <li data-toggle="tooltip" data-placement="bottom" title="A few Color Examples. Download includes CSS Files for all color examples & the tools to Generate any Color combination. This Color-Switcher is for previewing purposes only.">
-              <ul class="skins">
-
-                <li><span data-file="app/app" data-skin="default" style="background: #16ae9f "></span></li>
-
-                <li><span data-file="skin-orange" data-skin="orange" style="background: #e74c3c "></span></li>
-
-                <li><span data-file="skin-blue" data-skin="blue" style="background: #4687ce "></span></li>
-
-                <li><span data-file="skin-purple" data-skin="purple" style="background: #af86b9 "></span></li>
-
-                <li><span data-file="skin-brown" data-skin="brown" style="background: #c3a961 "></span></li>
-
-              </ul>
-            </li>
-          </ul>
+          
           <ul class="nav navbar-nav navbar-right">
             <li class="hidden-xs">
               <a href="#sidebar-chat" data-toggle="sidebar-menu">
@@ -94,17 +62,15 @@
     <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
     <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" id="sidebar-menu">
       <div data-scrollable>
-        <h4 class="category">Course Information</h4>
+        <h4 class="category">Informacije o sustavu</h4>
         <div class="sidebar-block">
           <div class="media">
-            <span class="pull-left media-object icon-block half bg-gray-dark">
-                    <i class="fa fa-book"></i>
+            <span class=" media-object icon-block half bg-gray-dark">
+                    <i class="fa fa-adjust "></i>
                 </span>
-            <div class="media-body">
-              <h4 class="sidebar-heading media-heading">Github Webhooks</h4>
-            </div>
+            
           </div>
-          <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda autem ...</p>
+          <p class="margin-none">Sustav, svojim korisnicima, pruža uvid u stanje vrijednosti temperature i vlage u njihovoj kući sa udaljene lokacije.</p>
         </div>
         <h4 class="category">Get access</h4>
         <div class="sidebar-block">
@@ -385,7 +351,7 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <div class="media">
-                  <span class="pull-right icon-block double media-object bg-lightred"><i class="fa fa-github"></i></span>
+                  <span class="pull-right icon-block double media-object "><img src="images/people/110/image_screen.jpg" alt="People"/></span>
                   <div class="media-body">
                     <h1 class="h3 media-heading">Github Webhooks for Beginners</h1>
                     <p class="small text-muted">

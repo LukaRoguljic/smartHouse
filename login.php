@@ -20,7 +20,7 @@ session_start();
       if($count == 1) {
          
          $_SESSION['login_user'] = $myusername;
-         header("location: lesson.html");
+         header("location: lesson.php");
       }else {
          header("location: index.html");
       }
