@@ -1,3 +1,6 @@
+<?php
+   include('session.php');
+?>
 <!DOCTYPE html>
 <html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
 
@@ -31,7 +34,7 @@
           <a href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
           <a class="navbar-brand" href="index.html">SmartHouseMonitoring</a>
         </div>
-
+          <h4></h4>
         <!-- Collect the nav links, forms, and other content for toggling -->
       </div>
     </div>
@@ -60,8 +63,13 @@
             </li>
           </ul>
         </div>
-        <div class="sidebar-block equal-padding">
-          <a class="btn btn-block btn-default" href="library-grid.html">Back to Library</a>
+        <div class="sidebar-block">
+          <h4 class="category">Korisničko ime</h4>
+          <a class="btn btn-block btn-default" href="library-grid.html"><?php echo $login_session; ?></a>
+        </div>
+        <div class="sidebar-block">
+          <h4 class="category">Sekcija za odjavu</h4>
+          <a class="btn btn-block btn-default" action="logout.php">Odjavi se</a>
         </div>
       </div>
     </div>
@@ -101,14 +109,43 @@
                   <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
                   <div class="media-body">
                     <form action="">
-                      <input class="btn btn-primary" type="submit" name="login" value="Prijava"/>
+                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje temperature"/>
+                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali grijanje"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi grijanje"/>
                     </form>
                   </div>
                 </div>
               </div>
-              
-            
+          </div>
 
+          <div class="panel panel-default curriculum open">
+              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
+                <div class="media">
+                  <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
+                  <div class="media-body">
+                    <form action="">
+                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje rasvjete"/>
+                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali rasvjetu"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi rasvjetu"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="panel panel-default curriculum open">
+              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
+                <div class="media">
+                  <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
+                  <div class="media-body">
+                    <form action="">
+                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje vlage"/>
+                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali odvlaživač"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi odvlaživač"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
           </div>
 
         </div>
