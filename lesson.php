@@ -72,16 +72,18 @@
           </div>
           <p class="margin-none">Sustav, svojim korisnicima, pruža uvid u stanje vrijednosti temperature i vlage u njihovoj kući sa udaljene lokacije.</p>
         </div>
-        <h4 class="category">Get access</h4>
+        <br></br><br></br>
         <div class="sidebar-block">
           <ul class="list-group list-group-menu primary">
             <li class="list-group-item active">
-              <a href="">Subscribe <span class="badge pull-right">&dollar;9/mo</span></a>
+              <a href="">Subscribe</a>
             </li>
+            <br></br>
             <li class="list-group-item">
-              <a href="">Just this course <span class="badge pull-right">&dollar;5</span></a>
+              <a href="">Just this course</a>
             </li>
           </ul>
+          <br></br>
         </div>
         <h4 class="category">Tutor</h4>
         <div class="sidebar-block">
