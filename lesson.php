@@ -25,13 +25,8 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-ellipsis-v"></i></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
+          
+          
           <a class="navbar-brand" href="index.html">SmartHouseMonitoring</a>
         </div>
           <h4></h4>
