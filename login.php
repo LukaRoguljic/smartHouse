@@ -14,7 +14,7 @@ session_start();
       {
          
          $_SESSION['login_user'] = $myusername;
-         header("location: lesson.php");
+         header("location: monitoring.php");
       }
       else 
       {
