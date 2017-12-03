@@ -65,9 +65,7 @@
         </div>
         <div class="sidebar-block">
           <h4 class="category">Sekcija za odjavu</h4>
-            
               <a href="logout.php" class="btn btn-block btn-default">Odjavi se</a>
-            
         </div>
       </div>
     </div>
@@ -105,11 +103,24 @@
                 <div class="media">
                   <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
                   <div class="media-body">
-                    <form action="">
-                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje temperature"/>
-                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali grijanje"/>
-                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi grijanje"/>
-                    </form>
+                      <input id="heatdemo" onclick="heat_function()" class="btn btn-primary" value="Prikaži mi stanje temperature"/>
+                      <input class="btn btn-primary" id="upali_grijanje" value="Upali grijanje"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje"  value="Ugasi grijanje"/>
+                      <button onclick="heat_function()">Try it</button>
+                      <p id="heat_demo"></p>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="panel panel-default curriculum open">
+              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
+                <div class="media">
+                  <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
+                  <div class="media-body">
+                      <input class="btn btn-primary" value="Prikaži mi stanje rasvjete"/>
+                      <input class="btn btn-primary" id="upali_grijanje"  value="Upali rasvjetu"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje" value="Ugasi rasvjetu"/>
                   </div>
                 </div>
               </div>
@@ -120,26 +131,9 @@
                 <div class="media">
                   <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
                   <div class="media-body">
-                    <form action="">
-                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje rasvjete"/>
-                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali rasvjetu"/>
-                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi rasvjetu"/>
-                    </form>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          <div class="panel panel-default curriculum open">
-              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
-                <div class="media">
-                  <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
-                  <div class="media-body">
-                    <form action="">
-                      <input class="btn btn-primary" type="submit" name="login" value="Prikaži mi stanje vlage"/>
-                      <input class="btn btn-primary" id="upali_grijanje" type="submit" name="login" value="Upali odvlaživač"/>
-                      <input class="btn btn-primary" id="ugasi_grijanje" type="submit" name="login" value="Ugasi odvlaživač"/>
-                    </form>
+                      <input class="btn btn-primary" name="login" value="Prikaži mi stanje vlage"/>
+                      <input class="btn btn-primary" id="upali_grijanje" value="Upali odvlaživač"/>
+                      <input class="btn btn-primary" id="ugasi_grijanje" value="Ugasi odvlaživač"/>
                   </div>
                 </div>
               </div>
@@ -161,7 +155,12 @@
 
   </div>
   <!-- /st-container -->
-
+<script>
+  function heat_function() {
+    var x = Math.floor((Math.random() * 13) + 15);
+    document.getElementById("heat_demo").innerHTML = x;
+}
+</script>
   <!-- Inline Script for colors and config objects; used by various external scripts; -->
   <script>
     var colors = {
@@ -200,5 +199,6 @@
   </script>
   <script src="js/vendor/all.js"></script>
   <script src="js/app/app.js"></script>
+  
 </body>
 </html>
