@@ -10,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SmartHouse</title>
+    <title>SmartHouse</title>
+  <link rel="icon" href="images/arduino_link.png">
   <link href="css/vendor/all.css" rel="stylesheet">
   <link href="css/app/app.css" rel="stylesheet">
   <link href="css/random.css" rel="stylesheet">
@@ -64,9 +65,9 @@
         </div>
         <div class="sidebar-block">
           <h4 class="category">Sekcija za odjavu</h4>
-            <form action="logout.php">
-              <a class="btn btn-block btn-default">Odjavi se</a>
-            </form>
+            
+              <a href="logout.php" class="btn btn-block btn-default">Odjavi se</a>
+            
         </div>
       </div>
     </div>
