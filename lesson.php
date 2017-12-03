@@ -106,7 +106,7 @@
                       <input id="heatdemo" onclick="heat_function()" class="btn btn-primary" value="Prikaži mi stanje temperature"/>
                       <input class="btn btn-primary" id="upali_grijanje" value="Upali grijanje"/>
                       <input class="btn btn-primary" id="ugasi_grijanje"  value="Ugasi grijanje"/>
-                      <button onclick="heat_function()">Try it</button>
+                      <button class="btn btn-primary" onclick="heat_function()">Try it</button>
                       <p id="heat_demo"></p>
 
                   </div>
