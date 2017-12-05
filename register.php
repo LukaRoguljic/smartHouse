@@ -29,7 +29,7 @@ if(ctype_alnum($_POST['username'])){
 					$sql = "INSERT INTO users SET name = '$_POST[name]',lastname = '$_POST[lastname]' ,username = '$_POST[username]', password = '$_POST[password]', email = '$_POST[email]' ";
 				    $result=mysqli_query($dbc,$sql);
 					echo "Hvala na prijavi!<br>";
-					echo "<a href='index.html'>Vratite se i prijavite se na sustav</a><br>";
+					echo "<a href='index.php'>Vratite se i prijavite se na sustav</a><br>";
 				}	
 				else{echo "Lozinka i ponovljena lozinka nisu iste ili email i ponovljeni email nisu isti!<br>";
 				echo "<a href='registration.html'>Ponovno pokušajte</a><br>";}
