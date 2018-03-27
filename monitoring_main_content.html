@@ -2,20 +2,9 @@
       <div class="st-content">
         <div class="st-content-inner">
           <div class="container-fluid">
-            <div class="panel panel-default">
-              <div class="panel-body">
-                <div class="media">
-                  <span class="pull-right icon-block double media-object "><img src="images/people/110/image_screen.jpg" alt="People"/></span>
-                  <div class="media-body">
-                    <h1 class="h3 media-heading">Github Open-Source</h1>
-                    <p>Ovaj cijeli projekt je napravljen u duhu "open-source" koncepta. Na "buttonu" GitHub možete pogledati kod za ovaj sustav te ga modificirati za svoje potrebe. Cilj Otvorenog koda je da što više ljudi sudjeluju u razvoju neke aplikacije kao i naobrazbe. Mnogo više možete naučiti gledajući druge kodove.</p>
-                    <a href="https://github.com/LukaRoguljic/smartHouse" target="_blank"><span class="label bg-lightred">GitHub</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
-            <h5>MONITORING</h5>
+            <h5>MONITORING</h5><button class="btn btn-primary" onclick="main_generator_function()">Automatski prikaz stanja</button>
             <div class="panel panel-default curriculum open">
               <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
                 <div class="media">
@@ -23,12 +12,28 @@
                   <div class="media-body">
                       <button class="btn btn-primary" onclick="heat_function()">Prikaži mi stanje temperature (&#8451)</button>
                       <button id="heat_demo" class="btn btn-primary">I</button>
-                      <button class="btn btn-primary" id="upali_grijanje">Upali grijanje</button>
-                      <button class="btn btn-primary" id="ugasi_grijanje">Ugasi grijanje</button>
+                      <button class="btn btn-primary" id="upali_grijanje" onclick="heat_function_on()">Upali grijanje</button>
+                      <button class="btn btn-primary" id="ugasi_grijanje" onclick="heat_function_off()">Ugasi grijanje</button>
+					  <button id="ugaseno_upaljeno" class="btn btn-primary">I</button>
                   </div>
                 </div>
               </div>
           </div>
+
+          <div class="panel panel-default curriculum open">
+              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
+                <div class="media">
+                  <span class="icon-block half pull-left"><i class="fa fa-tachometer"></i></span>
+                  <div class="media-body">
+                      <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sustav klimatizacije &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                      <button class="btn btn-primary" id="upali_klimu" onclick="climate_function_on()">Upali klimu</button>
+                      <button class="btn btn-primary" id="ugasi_klimu" onclick="climate_function_off()">Ugasi klimu</button>
+            <button id="ugaseno_upaljeno11" class="btn btn-primary">I</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+
           <div class="panel panel-default curriculum open">
               <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
                 <div class="media">
@@ -36,8 +41,9 @@
                   <div class="media-body">
                       <button class="btn btn-primary" onclick="moisture_function()">&nbsp;&nbsp;&nbsp;Prikaži mi stanje vlage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%)</button>
                       <button id="moisture_demo" class="btn btn-primary">I</button>
-                      <button class="btn btn-primary" id="upali_grijanje">Upali odvlaživač</button>
-                      <button class="btn btn-primary" id="ugasi_grijanje">Ugasi odvlaživač</button>
+                      <button class="btn btn-primary" id="upali_grijanje" onclick="m_function_on()">Upali odvlaživač</button>
+                      <button class="btn btn-primary" id="ugasi_grijanje" onclick="m_function_off()">Ugasi odvlaživač</button>
+					  <button id="ugaseno_upaljeno2" class="btn btn-primary">I</button>
                   </div>
                 </div>
               </div>
@@ -50,8 +56,23 @@
                   <div class="media-body">
                       <button class="btn btn-primary" onclick="illumination_function()">Prikaži mi stanje osvjetljenja&nbsp;&nbsp;&nbsp; (lx)</button>
                       <button id="illumination_demo" class="btn btn-primary">I</button>
-                      <button class="btn btn-primary" id="upali_grijanje">Upali rasvjetu</button>
-                      <button class="btn btn-primary" id="ugasi_grijanje">Ugasi ugasi</button>
+                      <button class="btn btn-primary" id="upali_grijanje" onclick="l_function_on()">Upali rasvjetu</button>
+                      <button class="btn btn-primary" id="ugasi_grijanje" onclick="l_function_off()">Ugasi rasvjetu</button>
+					  <button id="ugaseno_upaljeno3" class="btn btn-primary">I</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="panel panel-default curriculum open">
+              <div class="panel-heading panel-heading-gray" data-toggle="collapse" data-target="#curriculum-1">
+                <div class="media">
+                  <span class="icon-block half pull-left"><i class="fa fa-lock"></i></span>
+                  <div class="media-body">
+                      <button class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sigurnost&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+                      <button class="btn btn-primary" id="upali_alarm" onclick="s_function_on()">Upali alarm</button>
+                      <button class="btn btn-primary" id="ugasi_alarm" onclick="s_function_off()">Ugasi alarm</button>
+            <button id="ugaseno_upaljeno4" class="btn btn-primary">I</button>
                   </div>
                 </div>
               </div>
